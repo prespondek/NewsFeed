@@ -13,7 +13,7 @@ data class NewsFeedData (
     @SerializedName("title")
     var title: String = "",
     @SerializedName("rows")
-    var rows: ArrayList<NewsFeedRow> = ArrayList<NewsFeedRow>()
+    var rows: MutableList<NewsFeedRow> = mutableListOf()
 )
 
 data class NewsFeedRow (

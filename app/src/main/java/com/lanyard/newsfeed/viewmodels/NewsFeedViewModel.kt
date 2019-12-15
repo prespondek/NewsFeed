@@ -13,7 +13,8 @@ class NewsFeedViewModel : ViewModel() {
         val response = it as? NetworkApiSuccessResponse
         if (response != null) {
             MutableLiveData<List<NewsFeedRow>>(response.body.rows)
+        } else {
+            MutableLiveData<List<NewsFeedRow>>()
         }
-        MutableLiveData<List<NewsFeedRow>>()
     }
 }

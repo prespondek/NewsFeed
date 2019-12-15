@@ -16,8 +16,8 @@ class NewsItemAdapter : ListAdapter<NewsFeedRow, RecyclerView.ViewHolder>(NewsIt
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val plant = getItem(position)
-        (holder as NewsItemViewHolder).bind(plant)
+        val newsItem = getItem(position)
+        (holder as NewsItemViewHolder).bind(newsItem)
     }
 
     class NewsItemViewHolder(

@@ -13,7 +13,8 @@
             android:id="@+id/news_item_list"
             android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.lanyard.newsfeed.views.NewsFeedFragment"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:context="com.lanyard.newsfeed.views.NewsFeedFragment"
         tools:listitem="@layout/list_item_news"/>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     <ProgressBar
