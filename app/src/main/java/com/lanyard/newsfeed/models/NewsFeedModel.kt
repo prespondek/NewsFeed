@@ -9,18 +9,18 @@ interface NewsFeedService {
     fun fetchNewsFeedData(): Call<NewsFeedData>
 }
 
-class NewsFeedData {
+data class NewsFeedData (
     @SerializedName("title")
-    var title: String = ""
+    var title: String = "",
     @SerializedName("rows")
-    var rows = ArrayList<NewsFeedRow>()
-}
+    var rows: ArrayList<NewsFeedRow> = ArrayList<NewsFeedRow>()
+)
 
-class NewsFeedRow {
+data class NewsFeedRow (
     @SerializedName("title")
-    var title: String? = null
+    var title: String? = null,
     @SerializedName("description")
-    var description: String? = null
+    var description: String? = null,
     @SerializedName("imageHref")
     var imageHref: String? = null
-}
+)

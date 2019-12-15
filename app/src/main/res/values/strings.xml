@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">News Feed</string>
+    <string name="new_item_image" translation_description="Accessibility text for each of the news item">Picture of News Item</string>
 </resources>
